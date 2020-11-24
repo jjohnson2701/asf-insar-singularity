@@ -7,7 +7,8 @@ INSTALL_DIR=/projects/$USER/containers
 INITDIR=$PWD
 
 #load singularity
-module load singularity/3.3.0
+unset LD_LIBRARY_PATH
+module load singularity/3.6.4
 mkdir -p /scratch/summit/$USER/tmp
 export SINGULARITY_TMPDIR=/scratch/summit/$USER/tmp
 export SINGULARITY_CACHEDIR=/scratch/summit/$USER/tmp
